@@ -8,11 +8,11 @@ ADMIN_REST_URL = {'DEV': 'https://d-alfa-mb-1.zysbox.dev',
                   'QA': 'https://q-alfa-mb-1.zysbox.dev'
                   }.get(ENV)
 
-# ADMIN_USERNAME = 'akim.tonkonozhenko+qa@zytara.com'
-# ADMIN_USERNAME = 'nikita.diakov+qa@zytara.com'
+ADMIN_USERNAME = 'akim.tonkonozhenko+qa@zytara.com'
+ADMIN_USERNAME = 'nikita.diakov+qa@zytara.com'
 
-# ADMIN_PASSWORD = '9KT73tWbM?'
-# ADMIN_PASSWORD = '`MFrnp,j4d'
+ADMIN_PASSWORD = '9KT73tWbM?'
+ADMIN_PASSWORD = '`MFrnp,j4d'
 ADMIN_USERNAME = 'nikita.diakov+1@zytara.com'
 
 ADMIN_PASSWORD = 'BRJ9SLhkyrD_10'
@@ -152,9 +152,9 @@ def get_users_quantity_from_waitlist(email):
     return len(users_id)
 
 if __name__ == '__main__':
-    # for i in range(1000, 1021):
-    #     mail = f'akim.tonkonozhenko+{i}@zytara.com'
-    #     print(complete_deep_link(mail))
+    for i in range(1000, 1021):
+        mail = f'akim.tonkonozhenko+{i}@zytara.com'
+        print(complete_deep_link(mail))
     l = [complete_deep_link(f'akim.tonkonozhenko+{i}@zytara.com') for i in range(1024, 1025)]
     print(l)
 
