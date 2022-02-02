@@ -3,9 +3,8 @@ def total_sum(list1, list2):
     print(sum(joined_list))
 
 
+list_x = [1, 21, 42, 5, 6, 7, 8, 21, 56, 88]
+list_y = [2, 23, 78, 99, 44, 22, 8, 26, 66, 18]
 
-x = [1, 21, 42, 5, 6, 7, 8, 21, 56, 88]
-z = [2, 23, 78, 99, 44, 22, 8, 26, 66, 18]
 
-total_sum(x, z)
-
+total_sum(list_x, list_y)
